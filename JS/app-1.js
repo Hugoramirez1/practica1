@@ -1,3 +1,4 @@
-//prompt("Saludame perro :)");
-alert(prompt("saludame perro :)";
-    
+//prompt("Salúdame perro :)");
+alert(prompt("Salúdame perro :)"));
+
+ 
