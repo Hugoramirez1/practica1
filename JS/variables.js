@@ -1,13 +1,13 @@
 //variables
 //MALA PRÁCTICA
 var persona1 = {
-    nombres: "Juan"
-    , apellidos: "Vera"
+    nombres: "Hugo"
+    , apellidos: "Ramirez"
     , años: 164
 };
 
 //buena práctica
-let nombres = "Francisco Solano López";
+let nombres = "Hugo Ramirez";
 let costo_presupuesto = 63;
 
 //constantes
