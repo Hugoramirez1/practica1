@@ -1,5 +1,6 @@
 //variables
-//MALA PRÁCTICA
+//MALA PRÁCTICA 
+ 
 var persona1 = {
     nombres: "Hugo"
     , apellidos: "Ramirez"
