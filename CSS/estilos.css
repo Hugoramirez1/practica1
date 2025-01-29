@@ -1,8 +1,12 @@
 #div-caja-3 {
-    background-color: aqua;
+    background-color: rgb(192, 230, 192);
 }
 
 .tamanho-mediano-letra {
-    font-size: 35px;
-    color: rgb(108, 106, 106);
+    font-size: 25px;
+    color: rgb(172, 9, 9);
+}
+.tamanho-grande-letra {
+    font-size: 40px;
+    color: rgb(148, 172, 9);
 }
