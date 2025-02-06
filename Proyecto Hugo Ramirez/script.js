@@ -13,6 +13,3 @@ function volver() {
     document.querySelectorAll(".interfaz").forEach(interfaz => interfaz.style.display = "none");
     document.querySelector(".container").style.display = "block";
 }
-
-
-
