@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(13, 13, 13);
+    background: url('background Zelda proyect.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: rgb(249, 247, 247);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.interfaz {
+    display: none;
+    margin-top: 50px;
+}
+
+.oculto {
+    display: none;
+}
+
+
+
+

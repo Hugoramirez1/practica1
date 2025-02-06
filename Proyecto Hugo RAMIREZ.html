@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido al Juego!</h1>
+        <button onclick="mostrarInterfaz('volumen')">Volumen</button>
+        <button onclick="mostrarInterfaz('opciones')">Opciones</button>
+        <button onclick="mostrarInterfaz('juego')">Iniciar Juego</button>
+    </div>
+
+    <div id="interfazVolumen" class="interfaz oculto">
+        <h2>Configuración de Volumen</h2>
+        <input type="range" min="0" max="100">
+        <button onclick="volver()">Volver</button>
+    </div>
+
+    <div id="interfazOpciones" class="interfaz oculto">
+        <h2>Opciones</h2>
+        <label><input type="checkbox"> Modo oscuro</label>
+        <label><input type="checkbox"> Sonido activado</label>
+        <button onclick="volver()">Volver</button>
+    </div>
+
+    <div id="interfazJuego" class="interfaz oculto">
+        <h2>¡Juego Iniciado!</h2>
+        <p><strong><h2>¡Prepárate para la aventura!</h2></strong></p>
+        <button onclick="volver()">Volver</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
