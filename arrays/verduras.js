@@ -1,0 +1,1 @@
+const verduras = ["tomate", "locote", "cebolla"];
