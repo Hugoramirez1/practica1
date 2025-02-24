@@ -9,7 +9,7 @@ Este proyecto consiste en una aplicación web que permite a los usuarios crear, 
 2. Tecnologías Utilizadas
 HTML: Se utilizó para estructurar la interfaz de usuario, creando los elementos de la lista de tareas y los formularios para agregar nuevas tareas.
 CSS: Se aplicaron estilos visuales para mejorar la experiencia de usuario, asegurando que la aplicación sea visualmente atractiva y fácil de usar.
-JavaScript: Se implementó para dar interactividad al proyecto, como la capacidad de agregar, eliminar y marcar tareas como completadas sin necesidad de recargar la página.
+JavaScript: Se implementó para dar interactividad al proyecto, como la capacidad de agregar, eliminar y marcar tareas como completadas sin necesidad de recargar la página..
 3. Descripción y Explicación del Código
 HTML: Estructura de la página
 El archivo HTML establece la estructura básica de la página. Tiene:
