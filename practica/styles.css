@@ -1,24 +1,23 @@
-/* Estilos para el botón */
+body
+{
+    background-image:url(./imagen\ test.jpeg);
+    background-image: -o-repeating-linear-gradient();
+    background-size: cover;
+}
+
 button {
-    padding: 15px 30px; /* Tamaño del botón */
-    font-size: 18px; /* Tamaño del texto */
-    background-color: #057bfa; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #021d3a;
+    color: rgb(249, 247, 247);
+    border-radius: 5px;
 }
-
-/* Efecto cuando el usuario pasa el mouse por encima del botón */
-button:hover {
-    background-color: #00070f; /* Cambia el color cuando el cursor está sobre el botón */
-}
-
-/* Efecto cuando el botón es presionado */
-button:active {
-    background-color: #f3f4f6; /* Cambia el color cuando el botón está presionado */
-}
-body {
-    text-align: center;
+button:hover
+{
+    background-color: rgb(12, 130, 233);
 }
