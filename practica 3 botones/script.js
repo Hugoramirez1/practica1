@@ -1,10 +1,22 @@
-// Función que se ejecuta cuando el botón es presionado
-function accionBoton1() {
-    alert('¡Pulsaste el boton 1!'); // Muestra un mensaje emergente
+// Función para mostrar el slider de volumen
+function mostrarSlider() {
+    // Oculta el contenedor inicial y muestra el contenedor de volumen
+    document.getElementById('inicio-container').style.display = 'none';
+    document.getElementById('volumen-container').style.display = 'block';
 }
-function accionBoton2() {
-    alert('¡Pulsaste el boton 2!'); // Muestra un mensaje emergente
+
+// Función para volver al botón inicial
+function volver() {
+    // Muestra el contenedor inicial y oculta el de volumen
+    document.getElementById('inicio-container').style.display = 'block';
+    document.getElementById('volumen-container').style.display = 'none';
 }
-function accionBoton3() {
-    alert('¡Pulsaste el boton 3!'); // Muestra un mensaje emergente
-}
+
+// Función para actualizar el volumen del audio
+document.getElementById('slider').addEventListener('input', function() {
+    var volumen = this.value / 100;  // Convierte el valor del slider de 0 a 100 a un número entre 0 y 1
+    var audio = document.getElementById('audio'); // Obtiene el elemento de audio
+
+    audio.volume = volumen;  // Ajusta el volumen del audio
+    document.getElementById('valor-volumen').textContent = this.value;  // Muestra el valor actual del volumen
+});

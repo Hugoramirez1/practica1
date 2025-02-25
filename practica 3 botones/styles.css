@@ -1,7 +1,9 @@
 body
 {
-    background-image:url(./imagen\ test.jpeg);
+    background: url('./background\ Zelda\ proyect.jpg') no-repeat center center fixed;
     background-size:cover;
+    text-align: center;
+    color: rgb(5, 5, 5);
 }
 
 button {
@@ -23,3 +25,5 @@ button:hover
 button:active {
     background-color: #0b0b0b;
     }
+    
+  
