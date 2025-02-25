@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    color: rgb(16, 15, 15);
+    background: url('background Zelda proyect.jpg') no-repeat center center fixed;
     color: rgb(13, 13, 13);
-    background: url('LINK\ GIF.gif') no-repeat center center fixed;
+    background: url(./background\ Zelda\ proyect.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
