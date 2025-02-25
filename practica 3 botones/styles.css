@@ -1,8 +1,7 @@
 body
 {
     background-image:url(./imagen\ test.jpeg);
-    background-image: -o-repeating-linear-gradient();
-    background-size: cover;
+    background-size:cover;
 }
 
 button {
@@ -21,3 +20,6 @@ button:hover
 {
     background-color: rgb(12, 130, 233);
 }
+button:active {
+    background-color: #0b0b0b;
+    }
