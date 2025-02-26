@@ -1,5 +1,5 @@
 // Función para mostrar el slider de volumen
-function mostrarSlider() {
+function mostrarNuevaPartida() {
     // Oculta el contenedor inicial y muestra el contenedor de volumen
     document.getElementById('inicio-container').style.display = 'none';
     document.getElementById('volumen-container').style.display = 'block';

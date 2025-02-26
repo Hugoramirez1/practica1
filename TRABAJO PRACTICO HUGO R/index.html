@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
     <!-- Contenedor inicial con los botones -->
 
     <div id="inicio-container">
@@ -17,17 +18,35 @@
         <br>
         <button onclick="mostrarBoton2()">Opciones</button>
         <br>
-        <button onclick="mostrarBoton()">Ajustar Volumen</button>
+        <button onclick="mostrarBoton()">Creditos</button>
 
     </div>
 
     <div id="opciones-container" style="display:none;">
-        <h2>Opciones</h2>
+        <strong><h1>OPCIONES</h1></strong>
 
         <strong><p><h2>Aqui se podrían agregar más opciones,por ejemplo de Idioma, Subtítulos, etc.</p></h2></strong>
 
-        <label><input type="checkbox"> Modo oscuro</label>
-        <label><input type="checkbox"> Modo full HD 1080p</label>
+        <label><input type="checkbox"> Elegir el <strong>BIEN</strong></label>
+        <label><input type="checkbox"> Elegir el <strong>MAL</strong></label><br><br>
+
+        <strong><h1>CONFIGURACIÓN DE VOLUMEN</h1></strong>
+
+        <br>
+
+        <strong><label for="slider">Volumen: </label></strong>
+
+        <input type="range" id="slider" min="0" max="100" value="50">
+
+        <strong><p><span id="valor-volumen">50</span>%</p></strong>
+        <br>
+        <strong><p><h3>Audio de prueba</h3></p></strong>
+
+        <audio id="audio" controls>
+
+            <source src="./06 Kokiri Forest.mp3" type="audio/mp3">
+
+        </audio>
 
         <center><button onclick="volver()">Volver</button></center>
 
@@ -49,27 +68,12 @@
 
     <!-- Control de volumen con deslizante-->
 
-    <div id="volumen-container" style="display:none;">
+    <div id="creditos-container" style="display:none;">
 
-        <strong><p><h2>Configuración de Volumen</h2></p></strong>
-
-        <br>
-
-        <strong><label for="slider">Volumen: </label></strong>
-
-        <input type="range" id="slider" min="0" max="100" value="50">
-
-        <strong><p><span id="valor-volumen">50</span>%</p></strong>
-        
-        <br>
-
-        <strong><p><h3>Audio de prueba</h3></p></strong>
-
-        <audio id="audio" controls>
-
-            <source src="./06 Kokiri Forest.mp3" type="audio/mp3">
-
-        </audio>
+        <strong><h1>CREDITOS</h1></strong><br>
+        <strong><p><h2>Idea: Hugo Ramírez</h2></p></strong> <br>
+        <strong><p><h2>Edición: Hugo Ramírez</h2></p></strong><br>
+        <strong><p><h2>Programación: Hugo Ramírez</h2></p></strong><br>
 
         <center><button onclick="volver()">Volver</button></center>
 

@@ -10,7 +10,7 @@ button {
     margin: 20px;
 }
 
-/* Efecto hover */
+/* Efecto al colocar el puntero del mouse encima */
 button:hover {
     background-color: #0056b3;
 }

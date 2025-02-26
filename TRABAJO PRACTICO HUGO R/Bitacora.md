@@ -8,7 +8,7 @@ Jueves 13/Feb/2025 : Se investiga el uso de las variables y funciones necesarias
 
 Viernes 14/Feb/2025: Se realizan pruebas de las variables encontradas.
 
-Jueves 30/enero/2025:  
+Jueves 30/enero/2025:  Continuan las pruebas y errores.
 
 jueves 6/Feb/2025: Comienzo a buscar una imagen en la web para portada o background del proyecto "GUI".
 

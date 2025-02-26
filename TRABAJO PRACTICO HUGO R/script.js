@@ -1,19 +1,20 @@
-// Función para mostrar el slider de volumen
-function mostrarBoton() {
-    // Oculta el contenedor inicial y muestra el contenedor de volumen
+
+function mostrarBoton() {  // Oculta el contenedor inicio y muestra el contenedor de creditos
+
     document.getElementById('inicio-container').style.display = 'none';
-    document.getElementById('volumen-container').style.display = 'block';
+    document.getElementById('creditos-container').style.display = 'block';
 }
-function mostrarBoton2() {
-    // Oculta el contenedor inicial y muestra el contenedor de opciones
+function mostrarBoton2() { // Oculta el contenedor inicial y muestra el contenedor de opciones
+
     document.getElementById('inicio-container').style.display = 'none';
     document.getElementById('opciones-container').style.display = 'block';
 }
-function reproducirVideo() {
-    document.getElementById('video-container').style.display = 'block'; // Obtiene el elemento de video
+function reproducirVideo() {  // Reproduce el video
+
+    document.getElementById('video-container').style.display = 'block';
     video.play();
 
-    // Poner el video en pantalla completa
+    // Video en pantalla completa
     if (video.requestFullscreen) {
         video.requestFullscreen();  // Para navegadores modernos
     } else if (video.mozRequestFullScreen) {
@@ -24,11 +25,10 @@ function reproducirVideo() {
         video.msRequestFullscreen();  // Para Internet Explorer/Edge
     }
 }
-// Función para volver al botón inicial
-function volver() {
+function volver() {  // Botón para VOLVER a opciones de inicio
     // Muestra el contenedor inicial y oculta los demas
     document.getElementById('inicio-container').style.display = 'block';
-    document.getElementById('volumen-container').style.display = 'none';
+    document.getElementById('creditos-container').style.display = 'none';
     document.getElementById('opciones-container').style.display = 'none';
     document.getElementById('video-container').style.display = 'none';
 
