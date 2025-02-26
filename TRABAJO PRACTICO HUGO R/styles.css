@@ -1,0 +1,35 @@
+/* Estilo básico para los botones */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Efecto hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el contenedor inicial */
+#inicio-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para el contenedor del slider */
+#volumen-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body {
+    text-align: center;
+    background-image: url(./Fondo\ GREEN\ Zelda.jpg);
+    background-size: cover;
+    justify-content: center;
+}

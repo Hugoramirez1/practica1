@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final Hugo Ramirez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Contenedor inicial con los botones -->
+
+    <div id="inicio-container">
+
+        <button onclick="reproducirVideo()">Iniciar Nueva Partida</button>
+        <br>
+        <button onclick="mostrarSlider2()">Opciones</button>
+        <br>
+        <button onclick="mostrarSlider()">Ajustar Volumen</button>
+
+    </div>
+
+    <div id="opciones-container" style="display:none;">
+        <h2>Opciones</h2>
+
+        <strong><p><h2>Aqui se podrían agregar más opciones,por ejemplo de Idioma, Subtítulos, etc.</p></h2></strong>
+
+        <label><input type="checkbox"> Modo oscuro</label>
+        <label><input type="checkbox"> Modo full HD 1080p</label>
+
+        <center><button onclick="volver()">Volver</button></center>
+
+    </div>
+
+    <div id="video-container" style="display: none;">
+
+        <video id="video" width="800" controls>
+
+            <source src="./Zelda INTRO.mp4" type="video/mp4">
+
+        </video>
+
+        <center><button onclick="volver()">Volver</button></center>
+
+        <br>
+
+    </div>
+
+    <!-- Contenedor del control deslizante-->
+
+    <div id="volumen-container" style="display:none;">
+
+        <strong><p><h2>Configuración de Volumen</h2></p></strong>
+
+        <br>
+
+        <strong><label for="slider">Volumen: </label></strong>
+
+        <input type="range" id="slider" min="0" max="100" value="50">
+
+        <strong>
+            <p><span id="valor-volumen">50</span>%</p>
+        </strong>
+        
+        <br>
+
+        <strong><p><h3>Audio de prueba</h3></p></strong>
+
+        <audio id="audio" controls>
+
+            <source src="./06 Kokiri Forest.mp3" type="audio/mp3">
+
+        </audio>
+
+        <center><button onclick="volver()">Volver</button></center>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
