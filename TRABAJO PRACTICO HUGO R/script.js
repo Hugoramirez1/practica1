@@ -33,12 +33,3 @@ function volver() {  // Botón para VOLVER a opciones de inicio
     document.getElementById('video-container').style.display = 'none';
 
 }
-
-// Función para actualizar el volumen del audio
-document.getElementById('slider').addEventListener('input', function () {
-    var volumen = this.value / 100;  // Convierte el valor del slider de 0 a 100 a un número entre 0 y 1
-    var audio = document.getElementById('audio'); // Obtiene el elemento de audio
-
-    audio.volume = volumen;  // Ajusta el volumen del audio
-    document.getElementById('valor-volumen').textContent = this.value;  // Muestra el valor actual del volumen
-});
