@@ -1,10 +1,10 @@
 // Función para mostrar el slider de volumen
-function mostrarSlider() {
+function mostrarBoton() {
     // Oculta el contenedor inicial y muestra el contenedor de volumen
     document.getElementById('inicio-container').style.display = 'none';
     document.getElementById('volumen-container').style.display = 'block';
 }
-function mostrarSlider2() {
+function mostrarBoton2() {
     // Oculta el contenedor inicial y muestra el contenedor de opciones
     document.getElementById('inicio-container').style.display = 'none';
     document.getElementById('opciones-container').style.display = 'block';
