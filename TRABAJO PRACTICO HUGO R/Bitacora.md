@@ -2,7 +2,7 @@ Jueves 30/enero/2025:  Copiar del celular lo escrito del jueves y viernes 30 y 3
 
 jueves 6 feb/2025: Comienzo a buscar una imagen en la web para portada o background del proyecto "GUI".
 
-Viernes 07/Feb/2025: Genero con Chat GPT un ejemplo para ver que tantas lineas llevarán una buena GUI, me encuentro muchas variables que aún no usamos en clase y comienzo la investigación, del QUE, COMO Y CUANDO se usan. 
+Viernes 07/Feb/2025: Investigo más acerca de JS, CSS Y HTML. Volviendo a lo básico para asentar bien el proceso.
 
 Jueves 13/Feb/2025 : Se investiga el uso de las variables y funciones necesarias para la GUI.
 
@@ -12,7 +12,7 @@ Jueves 30/enero/2025:  Continuan las pruebas y errores.
 
 jueves 6/Feb/2025: Comienzo a buscar una imagen en la web para portada o background del proyecto "GUI".
 
-Viernes 07/Feb/2025: Busco en Chat GPT un ejemplo para ver que tantas lineas llevaran una buena GUI, me encuentro muchas variables que aún no usamos en clase y comienzo la investigación.
+Viernes 07/Feb/2025: Comienzo a investigar más comandos y variables para realizar una buena GUI, me encuentro muchas variables que aún no usamos en clase y comienzo a leer más.
 
 Lunes 10/Feb/2025 : El prof explicó la dificultad de realizar un proyecto completo y la importancia de APRENDER y no sólo usar chat GPT para pasar.
 
