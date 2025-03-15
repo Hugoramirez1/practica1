@@ -2,6 +2,7 @@ body {
     text-align: center;
     background-image: url(./alpine_meadow-wallpaper-2880x1620.jpg);
     background-size: cover;
+    justify-content: center;
 
 }
 

@@ -15,6 +15,15 @@ function myFunction3() {
     document.getElementById("hiddenText2").style.display = "block";
     document.getElementById("hiddenText2").innerHTML = "Con este botón sigues cambiando texto";
     document.getElementById("hiddenText").style.display = "none";
+    document.getElementById("volver").style.display = "block";
+    document.getElementById("secbtn1").style.display = "none";
 }
+function myFunction4() {
+    document.getElementById("hiddenText2").style.display = "none";
+    document.getElementById("btn").style.display = "block";
+    document.getElementById("volver").style.display = "none";
+    document.getElementById("secbtn1").style.display = "none";
+}
+
 
 
