@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-image: url(./alpine_meadow-wallpaper-2880x1620.jpg);
+    background-size: cover;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #37023c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(32, 4, 114)
+}
+
+h1 {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(45, 4, 84);
+}
