@@ -5,7 +5,7 @@ function myFunction() {
 }
 
 function myFunction2() {
-    document.getElementById("hiddenText").innerHTML = "Con este botón cambias el texto";
+    document.getElementById("hiddenText").innerHTML = "Con el siguiente botón cambias el texto";
     document.getElementById("secbtn1").style.display = "block";
     document.getElementById("secbtn").style.display = "none";
 
