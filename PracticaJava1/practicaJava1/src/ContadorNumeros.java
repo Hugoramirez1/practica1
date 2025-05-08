@@ -22,7 +22,6 @@ public class ContadorNumeros {
                 negativos++;
             }
         }
-        
         // Mostrar resultados
         System.out.println("\nResultados:");
         System.out.println("Números ingresados:");
