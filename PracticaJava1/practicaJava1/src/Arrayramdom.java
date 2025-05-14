@@ -1,3 +1,4 @@
+
 /*Ejercicio 3: Objetivo: Aprender a trabajar con arreglos (arrays), el ciclo for, y la clase Random para generar números aleatorios en Java.
 
 📋 Enunciado:
