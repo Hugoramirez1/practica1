@@ -5,96 +5,104 @@
   <title>Control de Llegadas Tardías y Ausencias</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url("./itacorda\ imagen\ fondo.jpg") no-repeat center center fixed;
-    background-size: cover;
-  }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("./itacorda imagen fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
 
-  header {
-    background-color: #e8661a;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-  }
+    header {
+      background-color: #e8661a;
+      color: white;
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+    }
 
-  h2 {
-    margin: 0;
-    font-size: 24px;
-  }
+    h2 {
+      margin: 0;
+      font-size: 24px;
+    }
 
-  .container {
-    margin: 30px;
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-  }
+    .container {
+      margin: 30px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
 
-  label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: block;
-    text-align: left;
-  }
+    label {
+      font-size: 16px;
+      margin-bottom: 5px;
+      display: block;
+      text-align: center;
+      }
+       .file-label {
+      display: inline-block;
+      background-color: #e87e1a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
 
-  input {
-    margin-bottom: 15px;
-    padding: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
+    .file-label:hover {
+      background-color: #b54800;
+    }
 
-  button {
-    background-color: #e87e1a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+    input[type="file"] {
+      display: none;
+    }
 
-  button:hover {
-    background-color: #b54800;
-  }
+    button {
+      background-color: #e87e1a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-  #output {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-    white-space: pre-wrap;
-    font-family: 'Courier New', Courier, monospace;
-    overflow-x: auto;
-    text-align: left;
-  }
+    button:hover {
+      background-color: #b54800;
+    }
 
-  .download-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 20px;
-  }
+    #output {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-x: auto;
+      text-align: left;
+    }
 
-  .download-btn:hover {
-    background-color: #218838;
-  }
-</style>
+    .download-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
 
+    .download-btn:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
 
@@ -103,14 +111,15 @@
   </header>
 
   <div class="container">
-    <label>Archivo de Funcionarios (.txt):</label><br>
+   <strong><label for="fileFuncionarios">Archivo de Funcionarios:</label></strong>
+    <label class="file-label" for="fileFuncionarios">Subir archivo</label>
     <input type="file" id="fileFuncionarios"><br>
 
-    <label>Archivo de Marcaciones (.txt):</label><br>
-    <input type="file" id="fileMarcaciones"><br>
+    <strong><label for="fileMarcaciones">Archivo de Marcaciones:</label></strong>
+    <label class="file-label" for="fileMarcaciones">Subir archivo</label>
+    <input type="file" id="fileMarcaciones"><br><br>
 
     <button onclick="procesar()">Procesar</button>
-
   </div>
 
   <script>
@@ -124,6 +133,15 @@
     function parseHora(horaStr) {
       const [h, m] = horaStr.split(':').map(Number);
       return h * 60 + m;
+    }
+
+    function capitalizarNombreCompleto(nombre) {
+      return nombre
+        .toLowerCase()
+        .split(' ')
+        .filter(Boolean)
+        .map(p => p.charAt(0).toUpperCase() + p.slice(1))
+        .join(' ');
     }
 
     async function leerArchivo(file) {
@@ -156,7 +174,8 @@
         funcionariosLines.forEach(line => {
           const partes = line.split(',');
           if (partes.length < 2) throw new Error(`Formato inválido en funcionarios: "${line}"`);
-          const nombre = partes[0].trim().toLowerCase();
+          const nombreOriginal = partes[0].trim();
+          const nombre = capitalizarNombreCompleto(nombreOriginal);
           let turnoTexto = partes[1].toLowerCase().replace(/\s+/g, ' ').trim();
           if (turnoTexto === "" || turnoTexto === "turno") {
             throw new Error(`Turno inválido o desconocido para: "${line}"`);
@@ -173,7 +192,8 @@
         marcacionesLines.forEach(line => {
           const partes = line.split('\t').map(p => p.trim()).filter(Boolean);
           if (partes.length < 2) throw new Error(`Formato inválido en marcaciones: "${line}"`);
-          const nombre = partes[0].toLowerCase();
+          const nombreOriginal = partes[0];
+          const nombre = capitalizarNombreCompleto(nombreOriginal);
           const [fecha, hora] = partes[1].split(' ');
           if (!fecha || !hora) throw new Error(`Formato de fecha/hora inválido en: "${line}"`);
 
@@ -220,7 +240,6 @@
           });
         });
 
-        // Crear datos para Excel
         const excelData = [["Nombre", "Fecha", "Hora", "Detalle"]];
         Object.keys(llegadasTardeMap).sort().forEach(nombre => {
           llegadasTardeMap[nombre].forEach(detalle => {
@@ -237,12 +256,9 @@
           excelData.push([nombre, fecha, "", "Ausente"]);
         });
 
-        // Crear el libro de Excel
         const wb = XLSX.utils.book_new();
         const ws = XLSX.utils.aoa_to_sheet(excelData);
         XLSX.utils.book_append_sheet(wb, ws, "Asistencias");
-
-        // Descargar el archivo Excel
         XLSX.writeFile(wb, "reporte_asistencias.xlsx");
 
       } catch (error) {
